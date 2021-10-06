@@ -28,16 +28,16 @@ function onDeviceReady() {
     
     $('.sidenav').sidenav();
 
-    $('.s1').click(function (e) { 
+    $('.calender').click(function (e) { 
+        e.preventDefault();
+        $('main').load('sites/calender.html', function () { 
+            $.getScript("js/calender.js") 
+        });
+    });
+    $('.map').click(function (e) { 
         e.preventDefault();
         $('main').load('sites/map.html', function () { 
             $.getScript("js/map.js") 
-        });
-    });
-    $('.s2').click(function (e) { 
-        e.preventDefault();
-        $('main').load('sites/add.html', function () { 
-            $.getScript("js/add.js") 
         });
     });
     
