@@ -18,9 +18,10 @@
     under the License.
 -->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!--
+
+<head>
+    <meta charset="utf-8">
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -29,64 +30,75 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/materialize/materialize.css">    
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <title>TerminLocation</title>
-    </head>
-    <body>
-        <header>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialize/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>TerminLocation</title>
+</head>
 
-        </header>
-            <nav>
-                <div class="nav-wrapper">
-                  <a href="#!" class="brand-logo">Logo</a>
-                  <a href="#" data-target="mobile-demo" class="sidenav-trigger">
-                      <i class="material-icons">menu</i></a>
-                  <ul class="right hide-on-med-and-down">
-                    <li><a href="#" class="calender">
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                <i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" class="calender">
                         <i class="large material-icons">calendar_today</i>
                     </a></li>
-                    <li><a href="#" class="map"><i class="large material-icons">map</i></a></li>
-                  </ul>
-                </div>
-            </nav>
-              <ul class="sidenav" id="mobile-demo">
-                <li><a href="#" class="calender">Kalender</a></li>
-                <li><a href="#" class="map">Karte</a></li>
-              </ul>
-        <main>
-            
-        </main>
-        <footer></footer>
+                <li><a href="#" class="map"><i class="large material-icons">map</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#" class="calender">Kalender</a></li>
+        <li><a href="#" class="map">Karte</a></li>
+    </ul>
+    <main>
 
-        <script src="cordova.js"></script>
-        
-        <!-- Calender Imports-->
-            <!-- Core Stylesheet -->
-            <link rel="stylesheet" href="calender/css/evo-calendar.css" />
-            <!-- Optional Themes -->
-            <link rel="stylesheet" href="calender/css/evo-calendar.midnight-blue.css" />
-            <link rel="stylesheet" href="calender/css/evo-calendar.orange-coral.css" />
-            <link rel="stylesheet" href="calender/css/evo-calendar.royal-navy.css" />
-            <!-- JavaScript -->
-            
+    </main>
+    <footer></footer>
 
-        <!-- jQuery Imports -->
-        <script src="js/jQuery/jquery-3.6.0.js"></script>
-        
-        <!-- Materialize Imports -->
-        <script src="js/materialize/materialize.min.js"></script>
-        
-        <!-- Calender Import muss nach JQuery sein.-->
-        <script src="calender/js/evo-calendar.js"></script>
+    <script src="cordova.js"></script>
 
 
-        <script src="js/index.js"></script>
-    </body>
+    <!-- Calender Imports-->
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="calender/css/evo-calendar.css" />
+    <!-- Optional Themes -->
+    <link rel="stylesheet" href="calender/css/evo-calendar.midnight-blue.css" />
+    <link rel="stylesheet" href="calender/css/evo-calendar.orange-coral.css" />
+    <link rel="stylesheet" href="calender/css/evo-calendar.royal-navy.css" />
+    <!-- JavaScript -->
+
+
+    <!-- jQuery Imports -->
+    <script src="js/jQuery/jquery-3.6.0.js"></script>
+
+    <!-- Import Datenbank -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
+
+    <!-- Materialize Imports -->
+    <script src="js/materialize/materialize.min.js"></script>
+
+    <!-- Calender Import muss nach JQuery sein.-->
+    <script src="calender/js/evo-calendar.js"></script>
+
+    <script src="js/dataBase.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
