@@ -35,17 +35,39 @@
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
         <meta name="color-scheme" content="light dark">
         <link rel="stylesheet" href="css/index.css">
-        <title>Hello World</title>
+        <link rel="stylesheet" href="css/materialize/materialize.css">    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>TerminLocation</title>
     </head>
     <body>
-        <div class="app">
-            <h1>HEy lol</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
+        <header>
+
+        </header>
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo">Logo</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                      <i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="#" class="s1">
+                        <i class="large material-icons">calendar_today</i>
+                    </a></li>
+                    <li><a href="#" class="s2">S2</a></li>
+                  </ul>
+                </div>
+            </nav>
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="#" class="s1">S1</a></li>
+                <li><a href="#" class="s2">S2</a></li>
+              </ul>
+        <main></main>
+        <footer></footer>
+
         <script src="cordova.js"></script>
+        <!-- jQuery Imports -->
+        <script src="js/jQuery/jquery-3.6.0.js"></script>
+        <script src="js/materialize/materialize.min.js"></script>
+
         <script src="js/index.js"></script>
     </body>
 </html>
