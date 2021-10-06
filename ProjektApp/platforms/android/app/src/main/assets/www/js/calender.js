@@ -1,1 +1,7 @@
-console.log("add loaded");
+// Lädt Kalender
+$('#evoCalendar').evoCalendar({
+    calendarEvents: myEvents
+});
+
+
+console.log("Calendar loaded");
